@@ -1,0 +1,20 @@
+{{!-----------success message--------}}
+<section id="messages">
+  {{#if SUCCESS_MESSAGES}}
+    <div class="alert alert-success">
+      {{SUCCESS_MESSAGES}}
+    </div>
+  {{/if}}
+</section>
+{{!-------data --}}
+<section>
+  <article>
+    <form id="formData" action="/user/create" method="post">
+      <h1>User Data</h1>
+      <input type="text" placeholder="enter name" name="name" />
+      <input type="text" placeholder="enter email" name="email" />
+      <input type="number" placeholder="Mobile number" name="mobnumber" />
+      <button disabled id="sendBtn">Send</button>
+    </form>
+  </article>
+</section>
